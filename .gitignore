@@ -31,6 +31,10 @@ Thumbs.db
 # Docker
 docker-compose.override.yml
 
+# Nginx Proxy Manager data
+npm-data/
+npm-letsencrypt/
+
 # Backup files
 *.backup
 *.bak

@@ -1,5 +1,5 @@
 services:
-  # Nginx Proxy Manager - Web UI for managing reverse proxy
+  # Nginx Proxy Manager
   nginx-proxy-manager:
     image: 'jc21/nginx-proxy-manager:latest'
     container_name: nginx-proxy-manager
@@ -7,7 +7,7 @@ services:
     ports:
       - '80:80'      # HTTP
       - '443:443'    # HTTPS
-      - '81:81'      # Admin Web Interface
+      - '81:81'      # Admin UI
     volumes:
       - ./npm-data:/data
       - ./npm-letsencrypt:/etc/letsencrypt
@@ -17,9 +17,8 @@ services:
       test: ["CMD", "/bin/check-health"]
       interval: 10s
       timeout: 3s
-      retries: 3
 
-  # Ferifly Travel Application
+  # Ferifly Application
   ferifly-web:
     build:
       context: .
@@ -37,7 +36,6 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
-    # Resource limits (adjust based on your server)
     deploy:
       resources:
         limits:
@@ -49,10 +47,9 @@ services:
     networks:
       - ferifly-network
     depends_on:
-      nginx-proxy-manager:
-        condition: service_healthy
+      - nginx-proxy-manager
 
 networks:
   ferifly-network:
     driver: bridge
-    name: ferifly-network
+

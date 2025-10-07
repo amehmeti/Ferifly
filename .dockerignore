@@ -33,6 +33,10 @@ Thumbs.db
 docker-compose.override.yml
 .dockerignore
 
+# Nginx Proxy Manager data
+npm-data/
+npm-letsencrypt/
+
 # Logs
 *.log
 
