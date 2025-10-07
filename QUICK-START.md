@@ -1,10 +1,10 @@
 # 🚀 Ferifly - Quick Start Guide
 
-## Choose Your Deployment Option
+## Complete Setup with Nginx Proxy Manager
 
 ---
 
-## ✅ Option 1: App Only (Recommended if NPM is already installed)
+## ✅ One-Command Deployment (Recommended)
 
 ### Step 1: Start the Application
 ```bash
