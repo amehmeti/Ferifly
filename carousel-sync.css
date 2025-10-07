@@ -1,0 +1,307 @@
+/* Perfect Carousel Synchronization - Ensure Both Carousels Match Exactly */
+
+/* Remove all gaps, margins, and spacing between slides */
+#winter-content .carousel-track,
+#summer-content .carousel-track {
+    display: flex !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    column-gap: 0 !important;
+    row-gap: 0 !important;
+    flex-wrap: nowrap !important;
+    transition: transform 0.3s ease-in-out !important;
+    will-change: transform !important;
+    transform-origin: left center !important;
+}
+
+/* Ensure slides have zero gaps and perfect 100% width */
+#winter-content .carousel-slide,
+#summer-content .carousel-slide {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    outline: none !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
+}
+
+/* Remove any inline spacing or text gaps */
+#winter-content .carousel-track,
+#summer-content .carousel-track {
+    font-size: 0 !important;
+    letter-spacing: 0 !important;
+    word-spacing: 0 !important;
+}
+
+/* Ensure images fill slides perfectly with no gaps */
+#winter-content .slide-image,
+#summer-content .slide-image {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    outline: none !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+#winter-content .slide-image img,
+#summer-content .slide-image img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    outline: none !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+    box-sizing: border-box !important;
+}
+
+/* Synchronize overlay styling */
+#winter-content .slide-overlay,
+#summer-content .slide-overlay {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)) !important;
+    padding: 60px 40px 40px !important;
+    color: white !important;
+    z-index: 2 !important;
+    margin: 0 !important;
+    border: none !important;
+    box-sizing: border-box !important;
+}
+
+#winter-content .slide-overlay h3,
+#summer-content .slide-overlay h3 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 3.5rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+    line-height: 1.1 !important;
+    color: white !important;
+}
+
+#winter-content .slide-overlay p,
+#summer-content .slide-overlay p {
+    font-size: 1.2rem !important;
+    line-height: 1.6 !important;
+    opacity: 0.95 !important;
+    max-width: 600px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+    color: white !important;
+}
+
+/* Synchronize container dimensions */
+#winter-content .carousel-container,
+#summer-content .carousel-container {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 600px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    border-radius: 25px !important;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15) !important;
+    box-sizing: border-box !important;
+}
+
+/* Synchronize navigation arrows */
+#winter-content .carousel-arrow,
+#summer-content .carousel-arrow {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: none !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.4rem !important;
+    color: #2C3E50 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+    z-index: 10 !important;
+    backdrop-filter: blur(10px) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#winter-content .carousel-arrow:hover,
+#summer-content .carousel-arrow:hover {
+    background: #00B4DB !important;
+    color: white !important;
+    transform: translateY(-50%) scale(1.1) !important;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+#winter-content .carousel-arrow.prev,
+#summer-content .carousel-arrow.prev {
+    left: 30px !important;
+}
+
+#winter-content .carousel-arrow.next,
+#summer-content .carousel-arrow.next {
+    right: 30px !important;
+}
+
+/* Hover effects - synchronized */
+#winter-content .carousel-slide:hover .slide-image img,
+#summer-content .carousel-slide:hover .slide-image img {
+    transform: scale(1.05) !important;
+    transition: transform 0.6s ease !important;
+}
+
+/* Ensure carousel wrapper has no extra space */
+#winter-content .destinations-carousel,
+#summer-content .destinations-carousel {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Responsive - synchronized breakpoints */
+@media (max-width: 768px) {
+    #winter-content .carousel-container,
+    #summer-content .carousel-container {
+        height: 500px !important;
+        border-radius: 20px !important;
+    }
+    
+    #winter-content .slide-overlay,
+    #summer-content .slide-overlay {
+        padding: 40px 30px 30px !important;
+    }
+    
+    #winter-content .slide-overlay h3,
+    #summer-content .slide-overlay h3 {
+        font-size: 2.5rem !important;
+    }
+    
+    #winter-content .slide-overlay p,
+    #summer-content .slide-overlay p {
+        font-size: 1rem !important;
+    }
+    
+    #winter-content .carousel-arrow,
+    #summer-content .carousel-arrow {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.2rem !important;
+    }
+    
+    #winter-content .carousel-arrow.prev,
+    #summer-content .carousel-arrow.prev {
+        left: 15px !important;
+    }
+    
+    #winter-content .carousel-arrow.next,
+    #summer-content .carousel-arrow.next {
+        right: 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #winter-content .carousel-container,
+    #summer-content .carousel-container {
+        height: 400px !important;
+        border-radius: 15px !important;
+    }
+    
+    #winter-content .slide-overlay,
+    #summer-content .slide-overlay {
+        padding: 30px 20px 20px !important;
+    }
+    
+    #winter-content .slide-overlay h3,
+    #summer-content .slide-overlay h3 {
+        font-size: 2rem !important;
+    }
+    
+    #winter-content .slide-overlay p,
+    #summer-content .slide-overlay p {
+        font-size: 0.9rem !important;
+    }
+    
+    #winter-content .carousel-arrow,
+    #summer-content .carousel-arrow {
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 1rem !important;
+    }
+    
+    #winter-content .carousel-arrow.prev,
+    #summer-content .carousel-arrow.prev {
+        left: 10px !important;
+    }
+    
+    #winter-content .carousel-arrow.next,
+    #summer-content .carousel-arrow.next {
+        right: 10px !important;
+    }
+}
+
+/* Fix any potential white space issues */
+#winter-content .carousel-track > *,
+#summer-content .carousel-track > * {
+    font-size: 1rem !important;
+}
+
+/* Ensure smooth continuous transitions */
+#winter-content .carousel-track,
+#summer-content .carousel-track {
+    backface-visibility: hidden !important;
+    perspective: 1000px !important;
+    transform-style: preserve-3d !important;
+}
+
+/* Remove any potential borders or outlines causing gaps */
+#winter-content *,
+#summer-content * {
+    border: none !important;
+    outline: none !important;
+}
+
+/* Restore borders only for overlay content */
+#winter-content .slide-overlay,
+#summer-content .slide-overlay,
+#winter-content .slide-overlay *,
+#summer-content .slide-overlay * {
+    border: initial;
+    outline: initial;
+}
+

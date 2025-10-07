@@ -1,0 +1,61 @@
+/* Carousel Width Fix - Force Both Carousels to Match Exactly */
+
+/* Tab Content Visibility - Critical for proper tab switching */
+.season-content { 
+    display: none !important; 
+    width: 100% !important; 
+    max-width: 100% !important; 
+    margin: 0 !important; 
+    padding: 0 !important; 
+    opacity: 0 !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+}
+
+.season-content.active { 
+    display: block !important; 
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: relative !important;
+    left: 0 !important;
+    animation: fadeInUp 0.6s ease !important;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Winter Carousel */
+#winter-content { width: 100% !important; max-width: 100% !important; margin: 0 !important; padding: 0 !important; }
+#winter-content .destinations-carousel { position: relative !important; width: 100% !important; max-width: 1200px !important; margin: 0 auto !important; padding: 0 !important; }
+#winter-content .carousel-container { position: relative !important; width: 100% !important; max-width: 100% !important; height: 600px !important; margin: 0 !important; padding: 0 !important; overflow: hidden !important; border-radius: 25px !important; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15) !important; }
+#winter-content .carousel-track { display: flex !important; width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1) !important; }
+#winter-content .carousel-slide { flex: 0 0 100% !important; width: 100% !important; min-width: 100% !important; max-width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; position: relative !important; }
+#winter-content .slide-image { position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; overflow: hidden !important; }
+#winter-content .slide-image img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center !important; margin: 0 !important; padding: 0 !important; display: block !important; }
+
+/* Summer Carousel */
+#summer-content { width: 100% !important; max-width: 100% !important; margin: 0 !important; padding: 0 !important; }
+#summer-content .destinations-carousel { position: relative !important; width: 100% !important; max-width: 1200px !important; margin: 0 auto !important; padding: 0 !important; }
+#summer-content .carousel-container { position: relative !important; width: 100% !important; max-width: 100% !important; height: 600px !important; margin: 0 !important; padding: 0 !important; overflow: hidden !important; border-radius: 25px !important; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15) !important; }
+#summer-content .carousel-track { display: flex !important; width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1) !important; }
+#summer-content .carousel-slide { flex: 0 0 100% !important; width: 100% !important; min-width: 100% !important; max-width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; position: relative !important; }
+#summer-content .slide-image { position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; overflow: hidden !important; }
+#summer-content .slide-image img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center !important; margin: 0 !important; padding: 0 !important; display: block !important; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    #winter-content .carousel-container, #summer-content .carousel-container { height: 500px !important; }
+}
+@media (max-width: 480px) {
+    #winter-content .carousel-container, #summer-content .carousel-container { height: 400px !important; }
+}
+

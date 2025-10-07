@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ferifly Travel Agency - Your gateway to amazing destinations. Book flights, boats, buses, hotels, and travel insurance with us.">
+    <meta name="keywords" content="travel agency, flights, hotels, travel insurance, destinations, booking">
+    <meta name="author" content="Ferifly Travel Agency">
+    <title data-en="Ferifly Travel Agency - Your Gateway to Amazing Destinations" data-al="Ferifly Agjencia e Udhëtimeve - Porta Juaj për Destinacione të Mrekullueshme" data-de="Ferifly Reisebüro - Ihr Tor zu erstaunlichen Zielen">Ferifly Agjencia e Udhëtimeve - Porta Juaj për Destinacione të Mrekullueshme</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23ED1C24'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carousel-fix.css">
+    <link rel="stylesheet" href="carousel-sync.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <div class="red-circle"></div>
+                        <div class="black-shapes"></div>
+                        <div class="blue-waves"></div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-ferifly">Ferifly</span>
+                        <div class="logo-tagline" data-en="travel & tourism" data-al="udhëtime & turizëm" data-de="reisen & tourismus">udhëtime & turizëm</div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-en="Home" data-al="Kryefaqja" data-de="Startseite">Kryefaqja</a>
+                <a href="#services" class="nav-link" data-en="Services" data-al="Shërbimet" data-de="Dienstleistungen">Shërbimet</a>
+                <a href="#destinations" class="nav-link" data-en="Destinations" data-al="Destinacionet" data-de="Reiseziele">Destinacionet</a>
+                <a href="#partners" class="nav-link" data-en="About Us" data-al="Rreth Nesh" data-de="Über Uns">Rreth Nesh</a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-al="Kontakti" data-de="Kontakt">Kontakti</a>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="al">
+                        <span class="fi fi-al"></span>
+                    </button>
+                    <button class="lang-btn" data-lang="en">
+                        <span class="fi fi-gb"></span>
+                    </button>
+                    <button class="lang-btn" data-lang="de">
+                        <span class="fi fi-de"></span>
+                    </button>
+                </div>
+                <div class="communication-icons">
+                    <a href="viber://chat?number=%2B38345411400" class="comm-icon viber-link" title="Viber">
+                        <i class="fab fa-viber"></i>
+                    </a>
+                    <a href="https://wa.me/38345411400" target="_blank" class="comm-icon whatsapp-link" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/FeriFlyy" target="_blank" class="comm-icon facebook-link" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/feriflyy/" target="_blank" class="comm-icon instagram-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Animated Background - Only in Hero -->
+        <div class="animated-background hero-only">
+            <!-- Modern Travel Vehicle Animation with Destinations (Planes Only) -->
+            <div class="travel-vehicles">
+                <!-- Plane 1: Left to Right -->
+                <div class="vehicle plane-1">
+                    <div class="vehicle-body">
+                        <div class="ferifly-brand">Antalya ✈️</div>
+                    </div>
+                </div>
+                <!-- Plane 2: Right to Left -->
+                <div class="vehicle plane-2">
+                    <div class="vehicle-body">
+                        <div class="ferifly-brand">✈️ Pristina</div>
+                    </div>
+                </div>
+                <!-- Plane 3: Left to Right -->
+                <div class="vehicle plane-3">
+                    <div class="vehicle-body">
+                        <div class="ferifly-brand">Paris ✈️</div>
+                    </div>
+                </div>
+                <!-- Plane 4: Right to Left -->
+                <div class="vehicle plane-4">
+                    <div class="vehicle-body">
+                        <div class="ferifly-brand">✈️ Düsseldorf</div>
+                    </div>
+                </div>
+                <!-- Plane 5: Left to Right -->
+                <div class="vehicle plane-5">
+                    <div class="vehicle-body">
+                        <div class="ferifly-brand">Tirana ✈️</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title" data-en="Welcome to Ferifly" data-al="Mirë se vini në Ferifly" data-de="Willkommen bei Ferifly">Mirë se vini në Ferifly</h1>
+            <p class="hero-subtitle" data-en="Your Gateway to Amazing Destinations" data-al="Porta Juaj për Destinacione të Mrekullueshme" data-de="Ihr Tor zu erstaunlichen Zielen">Porta Juaj për Destinacione të Mrekullueshme</p>
+            <p class="hero-description" data-en="Discover the world with our comprehensive travel services. From flights to hotels, we've got you covered for your next adventure." data-al="Zbuloni botën me shërbimet tona gjithëpërfshirëse të udhëtimeve. Nga fluturimet në hotele, ne ju mbulojmë për aventurën tuaj të ardhshme." data-de="Entdecken Sie die Welt mit unseren umfassenden Reisedienstleistungen. Von Flügen bis zu Hotels - wir haben Sie für Ihr nächstes Abenteuer abgedeckt.">Zbuloni botën me shërbimet tona gjithëpërfshirëse të udhëtimeve. Nga fluturimet në hotele, ne ju mbulojmë për aventurën tuaj të ardhshme.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary" data-en="Explore Services" data-al="Eksploroni Shërbimet" data-de="Dienstleistungen erkunden">Eksploroni Shërbimet</a>
+                <a href="#contact" class="btn btn-secondary" data-en="Get in Touch" data-al="Lidhuni me ne" data-de="Kontakt aufnehmen">Lidhuni me ne</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-en="Our Services" data-al="Shërbimet Tona" data-de="Unsere Dienstleistungen">Shërbimet Tona</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 data-en="Flight Tickets" data-al="Biletat e Aviacionit" data-de="Flugtickets">Biletat e Aviacionit</h3>
+                    <p data-en="Book domestic and international flights with the best prices and flexible options." data-al="Rezervoni fluturime vendore dhe ndërkombëtare me çmimet më të mira dhe opsione fleksibile." data-de="Buchen Sie Inlands- und internationale Flüge zu den besten Preisen und mit flexiblen Optionen.">Rezervoni fluturime vendore dhe ndërkombëtare me çmimet më të mira dhe opsione fleksibile.</p>
+                    <a href="#" class="service-link" data-en="Learn More" data-al="Mëso më shumë" data-de="Mehr erfahren">Mëso më shumë</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3 data-en="Boat Tickets" data-al="Biletat e Anijes" data-de="Schifftickets">Biletat e Anijes</h3>
+                    <p data-en="Travel by sea with our reliable boat ticket booking services." data-al="Udhëtoni përmes detit me shërbimet tona të besueshme për rezervimin e biletave të anijes." data-de="Reisen Sie zu Wasser mit unseren zuverlässigen Buchungsservices für Schifftickets.">Udhëtoni përmes detit me shërbimet tona të besueshme për rezervimin e biletave të anijes.</p>
+                    <a href="#" class="service-link" data-en="Learn More" data-al="Mëso më shumë" data-de="Mehr erfahren">Mëso më shumë</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3 data-en="Bus Tickets" data-al="Biletat e Autobusit" data-de="Bustickets">Biletat e Autobusit</h3>
+                    <p data-en="Travel by land with our reliable bus ticket booking services." data-al="Udhëtoni me sigurt me shërbimet tona të besueshme të rezervimit të biletave të autobusit." data-de="Reisen Sie zu Land mit unseren zuverlässigen Buchungsservices für Bustickets.">Udhëtoni me sigurt me shërbimet tona të besueshme të rezervimit të biletave të autobusit.</p>
+                    <a href="#" class="service-link" data-en="Learn More" data-al="Mëso më shumë" data-de="Mehr erfahren">Mëso më shumë</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-en="Health Insurance" data-al="Sigurimi i Shëndetit" data-de="Krankenversicherung">Sigurimi i Shëndetit</h3>
+                    <p data-en="Comprehensive travel insurance to protect you during your journey." data-al="Sigurimi gjithëpërfshirës i udhëtimeve për t'ju mbrojtur gjatë udhëtimit tuaj." data-de="Umfassende Reiseversicherung zum Schutz während Ihrer Reise.">Sigurimi gjithëpërfshirës i udhëtimeve për t'ju mbrojtur gjatë udhëtimit tuaj.</p>
+                    <a href="#" class="service-link" data-en="Learn More" data-al="Mëso më shumë" data-de="Mehr erfahren">Mëso më shumë</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2 class="section-title" data-en="Summer & Winter Holidays with Ferifly" data-al="Pushimet verore dhe dimërore me Ferifly" data-de="Sommer- und Winterferien mit Ferifly">Pushimet verore dhe dimërore me Ferifly</h2>
+            
+            <!-- Season Toggle -->
+            <div class="season-toggle">
+                <button class="season-btn active" data-season="summer">
+                    <i class="fas fa-sun"></i>
+                    <span data-en="Summer Holidays" data-al="Pushimet Verore" data-de="Sommerferien">Pushimet Verore</span>
+                </button>
+                <button class="season-btn" data-season="winter">
+                    <i class="fas fa-snowflake"></i>
+                    <span data-en="Winter Holidays" data-al="Pushimet Dimërore" data-de="Winterferien">Pushimet Dimërore</span>
+                </button>
+            </div>
+            
+            <!-- Summer Destinations -->
+            <div class="season-content active" id="summer-content">
+                <div class="destinations-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                        <!-- Dubai Slide -->
+                        <div class="carousel-slide active" data-country="dubai">
+                            <div class="slide-image">
+                                <img src="https://assets.voxcity.com/uploads/blog_images/why%20dubai%20is%20the%20perfect%20destination%20for%20every%20traveler_original.jpg" alt="Dubai perfect destination for every traveler" />
+                            </div>
+                            <div class="slide-overlay">
+                                <h3 data-en="Dubai" data-al="Dubai" data-de="Dubai">Dubai</h3>
+                                <p data-en="Take advantage of our offer for an unforgettable experience in the United Arab Emirates, discovering culture, beaches and amazing cities." data-al="Shfrytëzo ofertën tonë për një eksperiencë të paharrueshme në Emiratet Arabe të Bashkuara, duke njohur kulturën, plazhet dhe qytetet e mahnitshme." data-de="Nutzen Sie unser Angebot für ein unvergessliches Erlebnis in den Vereinigten Arabischen Emiraten und entdecken Sie Kultur, Strände und erstaunliche Städte.">Shfrytëzo ofertën tonë për një eksperiencë të paharrueshme në Emiratet Arabe të Bashkuara, duke njohur kulturën, plazhet dhe qytetet e mahnitshme.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Maldives Slide -->
+                        <div class="carousel-slide" data-country="maldives">
+                            <div class="slide-image">
+                                <img src="https://img.directbooking.ro/getimage.ashx?f=Statiuni&w=600&h=399&file=Statiune_2cc49871-736f-43c5-a388-b4d0c4d1c06b.jpg" alt="Maldives luxury resort destination" />
+                            </div>
+                            <div class="slide-overlay">
+                                <h3 data-en="Maldive" data-al="Maldive" data-de="Maldive">Maldive</h3>
+                                <p data-en="True paradise in the Indian Ocean with your holidays in the Maldives. Crystal clear waters, snow-white beaches and rich Maldivian culture are some of the attractions waiting for you." data-al="Parajsë e vërtetë në Tokën e Detit Indian me pushimet tuaja në Maladive. Ujëra të qetë kristal, plazhet e bardha si borë dhe kultura e pasur e Maladive janë disa nga atraksionet që ju presin." data-de="Wahres Paradies im Indischen Ozean mit Ihren Ferien auf den Malediven. Kristallklares Wasser, schneeweiße Strände und reiche maledivische Kultur sind einige der Attraktionen, die auf Sie warten.">Parajsë e vërtetë në Tokën e Detit Indian me pushimet tuaja në Maladive. Ujëra të qetë kristal, plazhet e bardha si borë dhe kultura e pasur e Maladive janë disa nga atraksionet që ju presin.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Turkey Slide -->
+                        <div class="carousel-slide" data-country="turkey">
+                            <div class="slide-image">
+                                <img src="https://www.advantour.com/img/turkey/things-to-do/paragliding.jpg" alt="Turkey paragliding adventure activity" />
+                            </div>
+                            <div class="slide-overlay">
+                                <h3 data-en="Turkey" data-al="Turqia" data-de="Türkei">Turqia</h3>
+                                <p data-en="Experience golden beaches, nature adventures, and enjoy delicious Turkish cuisine. Meet new friends and create unforgettable memories in Turkey." data-al="Përjetoni plazhet e zbehta, aventurat në natyrë, dhe shijoni kuzhinën e shijshme turke. Njihuni me miq të rinj dhe krijoni kujtime të paharrueshme në Turqi" data-de="Erleben Sie goldene Strände, Natur-Abenteuer und genießen Sie die köstliche türkische Küche. Lernen Sie neue Freunde kennen und schaffen Sie unvergessliche Erinnerungen in der Türkei.">Përjetoni plazhet e zbehta, aventurat në natyrë, dhe shijoni kuzhinën e shijshme turke. Njihuni me miq të rinj dhe krijoni kujtime të paharrueshme në Turqi</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Egypt Slide -->
+                        <div class="carousel-slide" data-country="egypt">
+                            <div class="slide-image">
+                                <img src="https://unitedguidestravel.com/wp-content/uploads/2023/04/a-camel-at-the-great-pyramids-of-giza-800x450.jpg" alt="Egypt camel at the Great Pyramids of Giza" />
+                            </div>
+                            <div class="slide-overlay">
+                                <h3 data-en="Egypt" data-al="Egjipt" data-de="Ägypten">Egjipt</h3>
+                                <p data-en="Egypt is the ideal destination for amazing holidays. Experience the wonder of the pyramids, enjoy the beaches of the Red Sea and explore the rich culture." data-al="Egjipti është destinacioni ideal për pushime të mahnitshme. Përjetoni mrekullinë e piramidave, shijoni plazhet e Detit të Kuq dhe eksploroni kulturën e pasur." data-de="Ägypten ist das ideale Ziel für erstaunliche Ferien. Erleben Sie das Wunder der Pyramiden, genießen Sie die Strände des Roten Meeres und erkunden Sie die reiche Kultur.">Egjipti është destinacioni ideal për pushime të mahnitshme. Përjetoni mrekullinë e piramidave, shijoni plazhet e Detit të Kuq dhe eksploroni kulturën e pasur.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Albania Slide -->
+                        <div class="carousel-slide" data-country="albania">
+                            <div class="slide-image">
+                                <img src="https://images.squarespace-cdn.com/content/v1/57322ef32fe131e30c4a3f5d/1513527252482-OV78VM8U8J41T0K61I8J/ksamil.jpg" alt="Albania Riviera Ksamil crystal waters" />
+                            </div>
+                            <div class="slide-overlay">
+                                <h3 data-en="Albania" data-al="Shqipëri" data-de="Albanien">Shqipëri</h3>
+                                <p data-en="In Albania, we are at home and we take care of each other. Our location, our culture and our traditions make us proud to be Albanian. This country is our soul." data-al="Në Shqipëri, jemi në shtëpi dhe kujdesemi për njëri-tjetrin. Vendndodhja jonë, kultura jonë dhe traditat tona na bëjnë krenarë që jemi shqiptarë. Ky vend është shpirti ynë" data-de="In Albanien sind wir zu Hause und kümmern uns umeinander. Unser Standort, unsere Kultur und unsere Traditionen machen uns stolz, Albaner zu sein. Dieses Land ist unsere Seele.">Në Shqipëri, jemi në shtëpi dhe kujdesemi për njëri-tjetrin. Vendndodhja jonë, kultura jonë dhe traditat tona na bëjnë krenarë që jemi shqiptarë. Ky vend është shpirti ynë</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Jordan Slide -->
+                        <div class="carousel-slide" data-country="jordan">
+                            <div class="slide-image">
+                                <img src="https://thumbs.dreamstime.com/b/beautiful-scenery-scenic-landscape-rocky-mountain-wadi-rum-desert-jordan-summer-scenic-landscape-rocky-mountain-wadi-rum-114324323.jpg" alt="Jordan Wadi Rum desert beautiful rocky landscape" />
+                            </div>
+                            <div class="slide-overlay">
+                                <h3 data-en="Jordan" data-al="Jordani" data-de="Jordanien">Jordani</h3>
+                                <p data-en="Jordan is a country rich in history and culture, where you can enjoy traditional food and the true hospitality of Jordanians. Get to know the heritage of this wonderful country." data-al="Jordan është një vend i pasur me histori dhe kulturë, ku ju mund të shijoni ushqimin tradicional dhe mikpritjen e vërtetë të jordanasve. Njihuni me trashëgiminë e këtij vendi të mrekullueshëm" data-de="Jordanien ist ein Land reich an Geschichte und Kultur, wo Sie traditionelles Essen und die wahre Gastfreundschaft der Jordanier genießen können. Lernen Sie das Erbe dieses wunderbaren Landes kennen.">Jordan është një vend i pasur me histori dhe kulturë, ku ju mund të shijoni ushqimin tradicional dhe mikpritjen e vërtetë të jordanasve. Njihuni me trashëgiminë e këtij vendi të mrekullueshëm</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Greece Slide -->
+                        <div class="carousel-slide" data-country="greece">
+                            <div class="slide-image">
+                                <img src="https://www.sovereign.com/-/media/Bynder/Sovereign-destinations/Greece/Santorini/Oia/Santorini-2023-Oia-Town-01183-1702047661-Hybris.jpg?rev=312a577d57d843f9ae86b6a89f56dc48&hash=6BDB47A870CE24C2A592F454365C21E7&h=480.375&w=1081.5" alt="Greece Santorini Oia town beautiful architecture" />
+                            </div>
+                            <div class="slide-overlay">
+                                <h3 data-en="Greece" data-al="Greqi" data-de="Griechenland">Greqi</h3>
+                                <p data-en="Visit ancient places, relax on beautiful Greek beaches. Get to know the history and heritage of this wonderful country and create unforgettable memories in Greece." data-al="Vizitoni vendet e lashta, rilaksimi në plazhet e bukura greke. Njihuni me historinë dhe trashëgiminë e këtij vendi të mrekullueshëm dhe krijojini kujtime të paharrueshme në Greqi" data-de="Besuchen Sie antike Orte, entspannen Sie an wunderschönen griechischen Stränden. Lernen Sie die Geschichte und das Erbe dieses wunderbaren Landes kennen und schaffen Sie unvergessliche Erinnerungen in Griechenland.">Vizitoni vendet e lashta, rilaksimi në plazhet e bukura greke. Njihuni me historinë dhe trashëgiminë e këtij vendi të mrekullueshëm dhe krijojini kujtime të paharrueshme në Greqi</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Croatia Slide -->
+                        <div class="carousel-slide" data-country="croatia">
+                            <div class="slide-image">
+                                <img src="https://blog.valamar.com/wp-content/uploads/2024/05/shutterstock_1601322625-scaled.jpg" alt="Croatia beautiful coastal destination" />
+                            </div>
+                            <div class="slide-overlay">
+                                <h3 data-en="Croatia" data-al="Kroaci" data-de="Kroatien">Kroaci</h3>
+                                <p data-en="Visit Croatia and experience a wonderful trip to this beautiful Balkan country. The best offers and personalized packages to enjoy the wonderful beaches." data-al="Vizitoni Kroacinë dhe përjetoni një udhëtim të mrekullueshëm në këtë vend të bukur të Ballkanit. Ofertat më të mira dhe pakoja të personalizuara për të shijuar plazhet e mrekullueshme." data-de="Besuchen Sie Kroatien und erleben Sie eine wunderbare Reise in dieses schöne Balkanland. Die besten Angebote und personalisierten Pakete, um die wunderbaren Strände zu genießen.">Vizitoni Kroacinë dhe përjetoni një udhëtim të mrekullueshëm në këtë vend të bukur të Ballkanit. Ofertat më të mira dhe pakoja të personalizuara për të shijuar plazhet e mrekullueshme.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Montenegro Slide -->
+                        <div class="carousel-slide" data-country="montenegro">
+                            <div class="slide-image">
+                                <img src="https://lp-cms-production.imgix.net/2025-03/AdobeStock97198408-crop.jpeg?auto=format,compress&q=72&w=1440&h=810&fit=crop" alt="Montenegro beautiful coastal destination" />
+                            </div>
+                            <div class="slide-overlay">
+                                <h3 data-en="Montenegro" data-al="Malë të zi" data-de="Montenegro">Malë të zi</h3>
+                                <p data-en="Discover the beauty of Montenegro's beaches with our special offers for wonderful holidays. Montenegro is an extraordinary destination known for its beautiful beaches." data-al="Zbulo bukuritë e plazheve të Malit të Zi me ofertat tona të veçanta për pushime të mrekullueshme. Mal i zi është një destinacion i pazakontë i njohur për plazhet e tij të bukura." data-de="Entdecken Sie die Schönheit der Strände Montenegros mit unseren besonderen Angeboten für wunderbare Ferien. Montenegro ist ein außergewöhnliches Ziel, bekannt für seine wunderschönen Strände.">Zbulo bukuritë e plazheve të Malit të Zi me ofertat tona të veçanta për pushime të mrekullueshme. Mal i zi është një destinacion i pazakontë i njohur për plazhet e tij të bukura.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="carousel-arrow prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-arrow next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                </div>
+            </div>
+            </div>
+
+            <!-- Winter Destinations -->
+            <div class="season-content" id="winter-content">
+                <div class="destinations-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                    <!-- Mavrovo Slide -->
+                    <div class="carousel-slide active" data-country="mavrovo">
+                        <div class="slide-image">
+                            <img src="https://www.macedonia-timeless.com/wp-content/uploads/2018/08/mavrovo-turizam.jpg" alt="Mavrovo North Macedonia winter skiing and frozen lake" />
+                        </div>
+                                <div class="slide-overlay">
+                                    <h3 data-en="Mavrovo, North Macedonia" data-al="Mavrovë, Maqedonia e Veriut" data-de="Mavrovo, Nordmazedonien">Mavrovë, Maqedonia e Veriut</h3>
+                                    <p data-en="Skiing, walks around the frozen lake, visit the St. Jovan Bigorski Monastery, and enjoy the stunning nature." data-al="Skijim, shëtitje rreth liqit të ngrirë, vizitoni Manastirin e Shën Joan Bigorski, dhe shijoni natyrën mahnitëse." data-de="Skifahren, Spaziergänge um den gefrorenen See, besuchen Sie das Kloster St. Jovan Bigorski und genießen Sie die atemberaubende Natur.">Skijim, shëtitje rreth liqit të ngrirë, vizitoni Manastirin e Shën Joan Bigorski, dhe shijoni natyrën mahnitëse.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Bansko Slide -->
+                            <div class="carousel-slide" data-country="bansko">
+                                <div class="slide-image">
+                                    <img src="https://content.igluski.com/images/_i60348176.jpg" alt="Bansko Bulgaria ski resort with slopes and thermal spas" />
+                                </div>
+                                <div class="slide-overlay">
+                                    <h3 data-en="Bansko, Bulgaria" data-al="Bansko, Bullgaria" data-de="Bansko, Bulgarien">Bansko, Bullgaria</h3>
+                                    <p data-en="Skiing and snowboarding on over 70 km of slopes, traditional cuisine, and thermal spas." data-al="Skijim dhe snowboard në mbi 70 km pista, kuzhinë tradicionale dhe spa termale." data-de="Skifahren und Snowboarden auf über 70 km Pisten, traditionelle Küche und Thermalbäder.">Skijim dhe snowboard në mbi 70 km pista, kuzhinë tradicionale dhe spa termale.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Zermatt Slide -->
+                            <div class="carousel-slide" data-country="zermatt">
+                                <div class="slide-image">
+                                    <img src="https://theworldpursuit.com/wp-content/uploads/2018/03/railway-62849_1920.jpg" alt="Zermatt Switzerland skiing and panoramic train rides with Matterhorn views" />
+                                </div>
+                                <div class="slide-overlay">
+                                    <h3 data-en="Zermatt, Switzerland" data-al="Zermatt, Zvicër" data-de="Zermatt, Schweiz">Zermatt, Zvicër</h3>
+                                    <p data-en="Skiing, snowboarding, and panoramic train rides with views of the Matterhorn." data-al="Skijim, snowboard dhe udhëtime panoramike me tren me pamje të Matterhorn-it." data-de="Skifahren, Snowboarden und Panoramazugfahrten mit Blick auf das Matterhorn.">Skijim, snowboard dhe udhëtime panoramike me tren me pamje të Matterhorn-it.</p>
+                                </div>
+                            </div>
+                            
+                    <!-- Lapland Slide -->
+                    <div class="carousel-slide" data-country="lapland">
+                        <div class="slide-image">
+                            <img src="https://assets.simpleviewcms.com/simpleview/image/fetch/c_fill,h_1080,w_1920/f_jpg/q_65/https://images.citybreak.com/image.aspx%3FImageId%3D6637780" alt="Lapland Finland husky sledding and Northern Lights" />
+                        </div>
+                                <div class="slide-overlay">
+                                    <h3 data-en="Lapland, Finland" data-al="Lapland, Finlandë" data-de="Lappland, Finnland">Lapland, Finlandë</h3>
+                                    <p data-en="Husky sledding, snowshoeing, visit Santa Claus Village, and see the Northern Lights." data-al="Udhëtime me qenë husky, ecje me pantofla dëbore, vizitoni Shtëpinë e Babagjyshit dhe shihni Aurorën Boreale." data-de="Huskyschlitten, Schneeschuhwandern, besuchen Sie das Weihnachtsmann-Dorf und sehen Sie die Nordlichter.">Udhëtime me qenë husky, ecje me pantofla dëbore, vizitoni Shtëpinë e Babagjyshit dhe shihni Aurorën Boreale.</p>
+                                </div>
+                            </div>
+                            
+                    <!-- Vienna Slide -->
+                    <div class="carousel-slide" data-country="vienna">
+                        <div class="slide-image">
+                            <img src="https://eternalarrival.com/wp-content/uploads/2020/01/shutterstock_719357683.jpg" alt="Vienna Austria Christmas markets and ice skating" />
+                        </div>
+                        <div class="slide-overlay">
+                            <h3 data-en="Vienna, Austria" data-al="Vjena, Austri" data-de="Wien, Österreich">Vjena, Austri</h3>
+                            <p data-en="Christmas markets, ice skating, classical concerts, and historic palaces." data-al="Tregje Krishtlindjesh, patinazh në akull, koncerte klasike dhe pallate historike." data-de="Weihnachtsmärkte, Eislaufen, klassische Konzerte und historische Paläste.">Tregje Krishtlindjesh, patinazh në akull, koncerte klasike dhe pallate historike.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Prague Slide -->
+                    <div class="carousel-slide" data-country="prague">
+                        <div class="slide-image">
+                            <img src="https://imageio.forbes.com/specials-images/imageserve/6563a6902a0b126b4b115769/Christmas-market-and-Tyn-Church-in-Old-Town-Square/960x0.jpg?height=342&width=711&fit=bounds" alt="Prague Czech Republic winter cityscape and Christmas markets" />
+                        </div>
+                        <div class="slide-overlay">
+                            <h3 data-en="Prague, Czech Republic" data-al="Praga, Republika Çeke" data-de="Prag, Tschechische Republik">Praga, Republika Çeke</h3>
+                            <p data-en="Historic city center, Christmas markets, hot wine, and beautiful architecture." data-al="Qendra historike e qytetit, tregje Krishtlindjesh, verë e nxehtë dhe arkitekturë e bukur." data-de="Historisches Stadtzentrum, Weihnachtsmärkte, Glühwein und schöne Architektur.">Qendra historike e qytetit, tregje Krishtlindjesh, verë e nxehtë dhe arkitekturë e bukur.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Budapest Slide -->
+                    <div class="carousel-slide" data-country="budapest">
+                        <div class="slide-image">
+                            <img src="https://travelnotesandbeyond.com/wp-content/uploads/2020/08/Budapest-winter-1-of-1-7.jpg" alt="Budapest Hungary winter cityscape and thermal baths" />
+                        </div>
+                        <div class="slide-overlay">
+                            <h3 data-en="Budapest, Hungary" data-al="Budapest, Hungari" data-de="Budapest, Ungarn">Budapest, Hungari</h3>
+                            <p data-en="Thermal baths, Christmas markets, Danube River views, and historic architecture." data-al="Banja termale, tregje Krishtlindjesh, pamje të lumit Danub dhe arkitekturë historike." data-de="Thermalbäder, Weihnachtsmärkte, Donau-Blick und historische Architektur.">Banja termale, tregje Krishtlindjesh, pamje të lumit Danub dhe arkitekturë historike.</p>
+                        </div>
+                    </div>
+                        </div>
+                        
+                        <!-- Navigation Arrows -->
+                        <button class="carousel-arrow prev" id="winterPrevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-arrow next" id="winterNextBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Us Section -->
+    <section id="partners" class="about-us">
+        <div class="about-background">
+            <div class="container">
+                <h2 class="section-title-light" data-en="About Us" data-al="Rreth Nesh" data-de="Über Uns">Rreth Nesh</h2>
+                
+                <div class="about-grid">
+                    <!-- Who We Are Card -->
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 data-en="Who We Are" data-al="Kush Jemi Ne" data-de="Wer Wir Sind">Kush Jemi Ne</h3>
+                        <p data-en="Ferifly is your trusted travel partner, dedicated to creating unforgettable journeys and experiences. We believe that every trip should be more than just a destination - it should be a story waiting to be told. A family business led by founder Leunora Bajrami, together with Fjolla and Florentin, since 2004." data-al="Ferifly është partneri juaj i besuar i udhëtimeve, i përkushtuar për krijimin e udhëtimeve dhe përvojave të paharrueshme. Ne besojmë se çdo udhëtim duhet të jetë më shumë se vetëm një destinacion - duhet të jetë një histori që pret të tregohet. Biznes familjar i udhëhequr nga themeluesja Leunora Bajrami, së bashku me Fjollën dhe Florentin, që nga viti 2004." data-de="Ferifly ist Ihr vertrauensvoller Reisepartner, der sich der Schaffung unvergesslicher Reisen und Erlebnisse widmet. Wir glauben, dass jede Reise mehr als nur ein Ziel sein sollte - sie sollte eine Geschichte sein, die darauf wartet, erzählt zu werden. Ein Familienunternehmen, das seit 2004 von der Gründerin Leunora Bajrami zusammen mit Fjolla und Florentin geleitet wird.">Ferifly është partneri juaj i besuar i udhëtimeve, i përkushtuar për krijimin e udhëtimeve dhe përvojave të paharrueshme. Ne besojmë se çdo udhëtim duhet të jetë më shumë se vetëm një destinacion - duhet të jetë një histori që pret të tregohet. Biznes familjar i udhëhequr nga themeluesja Leunora Bajrami, së bashku me Fjollën dhe Florentin, që nga viti 2004.</p>
+                    </div>
+                    
+                    <!-- Our Mission Card -->
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-compass"></i>
+                        </div>
+                        <h3 data-en="Our Mission" data-al="Misioni Ynë" data-de="Unsere Mission">Misioni Ynë</h3>
+                        <p data-en="To make travel accessible, enjoyable, and memorable for everyone. We strive to provide exceptional service, competitive prices, and personalized experiences that exceed your expectations." data-al="Të bëjmë udhëtimin të arritshëm, të këndshëm dhe të paharrueshëm për të gjithë. Ne përpiqemi të ofrojmë shërbim të jashtëzakonshëm, çmime konkurruese dhe përvoja të personalizuara që tejkalojnë pritjet tuaja." data-de="Reisen für alle zugänglich, angenehm und unvergesslich zu machen. Wir bemühen uns, außergewöhnlichen Service, wettbewerbsfähige Preise und personalisierte Erfahrungen zu bieten, die Ihre Erwartungen übertreffen.">Të bëjmë udhëtimin të arritshëm, të këndshëm dhe të paharrueshëm për të gjithë. Ne përpiqemi të ofrojmë shërbim të jashtëzakonshëm, çmime konkurruese dhe përvoja të personalizuara që tejkalojnë pritjet tuaja.</p>
+                    </div>
+
+                    <!-- What We Do Card -->
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-suitcase-rolling"></i>
+                        </div>
+                        <h3 data-en="What We Do" data-al="Çfarë Bëjmë" data-de="Was Wir Tun">Çfarë Bëjmë</h3>
+                        <p data-en="From flight bookings to complete travel packages, we offer comprehensive travel services including summer and winter destinations, partner hotels, camping sites, and health insurance for travelers. Our team is here to make your travel dreams come true." data-al="Nga rezervimet e fluturimeve deri te pakoja të plota të udhëtimeve, ne ofrojmë shërbime gjithëpërfshirëse udhëtimesh duke përfshirë destinacionet verore dhe dimërore, hotelet partner, vendet e kampimit dhe sigurimin shëndetësor për udhëtarët. Ekipi ynë është këtu për t'i bërë ëndrrat tuaja të udhëtimeve realitet." data-de="Von Flugbuchungen bis hin zu kompletten Reisepaketen bieten wir umfassende Reisedienstleistungen einschließlich Sommer- und Winterziele, Partnerhotels, Campingplätze und Krankenversicherung für Reisende. Unser Team ist hier, um Ihre Reiseträume wahr werden zu lassen.">Nga rezervimet e fluturimeve deri te pakoja të plota të udhëtimeve, ne ofrojmë shërbime gjithëpërfshirëse udhëtimesh duke përfshirë destinacionet verore dhe dimërore, hotelet partner, vendet e kampimit dhe sigurimin shëndetësor për udhëtarët. Ekipi ynë është këtu për t'i bërë ëndrrat tuaja të udhëtimeve realitet.</p>
+                    </div>
+
+                    <!-- Our Values Card -->
+                    <div class="about-card about-card-wide">
+                        <div class="about-card-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 data-en="Our Values" data-al="Vlerat Tona" data-de="Unsere Werte">Vlerat Tona</h3>
+                        <div class="values-grid-compact">
+                            <div class="value-item-compact">
+                                <i class="fas fa-heart"></i>
+                                <h4 data-en="Passion" data-al="Pasioni" data-de="Leidenschaft">Pasioni</h4>
+                                <p data-en="Passionate about travel and helping you discover the world." data-al="Të pasionuar për udhëtime dhe për t'ju ndihmuar të zbuloni botën." data-de="Leidenschaftlich für das Reisen und helfen Ihnen, die Welt zu entdecken.">Të pasionuar për udhëtime dhe për t'ju ndihmuar të zbuloni botën.</p>
+                            </div>
+                            <div class="value-item-compact">
+                                <i class="fas fa-shield-alt"></i>
+                                <h4 data-en="Trust" data-al="Besimi" data-de="Vertrauen">Besimi</h4>
+                                <p data-en="Building lasting relationships through reliability and transparency." data-al="Ndërtojmë marrëdhënie të qëndrueshme përmes besueshmërisë dhe transparencës." data-de="Dauerhafte Beziehungen durch Zuverlässigkeit und Transparenz aufbauen.">Ndërtojmë marrëdhënie të qëndrueshme përmes besueshmërisë dhe transparencës.</p>
+                            </div>
+                            <div class="value-item-compact">
+                                <i class="fas fa-star"></i>
+                                <h4 data-en="Excellence" data-al="Ekselenca" data-de="Exzellenz">Ekselenca</h4>
+                                <p data-en="Striving for excellence in every service we provide." data-al="Përpiqemi për ekselencë në çdo shërbim që ofrojmë." data-de="Nach Exzellenz in jedem Service streben.">Përpiqemi për ekselencë në çdo shërbim që ofrojmë.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Family Vision Card -->
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-heart-circle"></i>
+                        </div>
+                        <h3 data-en="Our Family Vision" data-al="Vizioni Ynë Familjar" data-de="Unsere Familienvision">Vizioni Ynë Familjar</h3>
+                        <p data-en="As a family agency, we believe that every trip is more than just a destination – it's a story that connects with family, friends and unforgettable memories. With passion and dedication, we make each of your trips special and full of joy." data-al="Si një agjenci familjare, ne besojmë se çdo udhëtim është më shumë se një destinacion – është një histori që lidhet me familjen, miqtë dhe kujtimet e paharrueshme. Me pasion dhe përkushtim, e bëjmë çdo udhëtim tuajin të veçantë dhe të mbushur me gëzim." data-de="Als Familienagentur glauben wir, dass jede Reise mehr als nur ein Ziel ist – es ist eine Geschichte, die sich mit Familie, Freunden und unvergesslichen Erinnerungen verbindet. Mit Leidenschaft und Hingabe machen wir jede Ihrer Reisen besonders und voller Freude.">Si një agjenci familjare, ne besojmë se çdo udhëtim është më shumë se një destinacion – është një histori që lidhet me familjen, miqtë dhe kujtimet e paharrueshme. Me pasion dhe përkushtim, e bëjmë çdo udhëtim tuajin të veçantë dhe të mbushur me gëzim.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-left">
+                    <div class="footer-logo">
+                        <div class="logo-container">
+                            <div class="logo-icon">
+                                <div class="red-circle"></div>
+                                <div class="black-shapes"></div>
+                                <div class="blue-waves"></div>
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-ferifly">Ferifly</span>
+                                <div class="logo-tagline" data-en="travel & tourism" data-al="udhëtime & turizëm" data-de="reisen & tourismus">udhëtime & turizëm</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p data-en="Your trusted travel partner for unforgettable journeys around the world." data-al="Partneri juaj i besuar i udhëtimeve për udhëtime të paharrueshme në mbarë botën." data-de="Ihr vertrauensvoller Reisepartner für unvergessliche Reisen rund um die Welt.">Partneri juaj i besuar i udhëtimeve për udhëtime të paharrueshme në mbarë botën.</p>
+                </div>
+                <div class="footer-section footer-center">
+                    <h4 data-en="Contact Information" data-al="Informacioni i Kontaktit" data-de="Kontaktinformationen">Informacioni i Kontaktit</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:Feri-fly@live.de">Feri-fly@live.de</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>045 411 400</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-viber"></i>
+                            <a href="viber://chat?number=+38345411400">+383 45 411 400</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/38345411400" target="_blank">+383 45 411 400</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-en="Address: Dëshmorët e Kombit - Te Sheshi, Ferizaj, Kosovo" data-al="Adresa: Rruga: Dëshmorët e Kombit - Te Sheshi, Ferizaj, Kosovo" data-de="Adresse: Dëshmorët e Kombit - Te Sheshi, Ferizaj, Kosovo">Rruga: Dëshmorët e Kombit - Te Sheshi, Ferizaj, Kosovo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section footer-right">
+                    <h4 data-en="Follow Us" data-al="Na Ndiqni" data-de="Folgen Sie uns">Na Ndiqni</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/FeriFlyy" target="_blank" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/feriflyy/" target="_blank" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="&copy; 2024 Ferifly Travel Agency. All rights reserved." data-al="&copy; 2024 Ferifly Agjencia e Udhëtimeve. Të gjitha të drejtat e rezervuara." data-de="&copy; 2024 Ferifly Reisebüro. Alle Rechte vorbehalten.">&copy; 2024 Ferifly Agjencia e Udhëtimeve. Të gjitha të drejtat e rezervuara.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Bubble -->
+    <div class="chat-bubble" id="chat-bubble">
+        <div class="chat-icon">
+            <i class="fas fa-comments"></i>
+        </div>
+    </div>
+
+    <!-- Health Insurance Modal -->
+    <div class="modal-overlay" id="insurance-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2 data-en="Health Insurance Coverage" data-al="Mbulimi i Sigurimit të Shëndetit" data-de="Krankenversicherungsschutz">Mbulimi i Sigurimit të Shëndetit</h2>
+            </div>
+            <div class="modal-body">
+                <ul class="coverage-list">
+                    <li data-en="Comprehensive coverage for medical emergencies" data-al="Mbulim gjithëpërfshirës për emergjencat mjekësore" data-de="Umfassender Schutz bei medizinischen Notfällen">Mbulim gjithëpërfshirës për emergjencat mjekësore</li>
+                    <li data-en="Loss or delay of luggage" data-al="Humbja ose vonesa e bagazhit" data-de="Verlust oder Verspätung von Gepäck">Humbja ose vonesa e bagazhit</li>
+                    <li data-en="Trip cancellation or changes" data-al="Anulimi ose ndryshimet e udhëtimit" data-de="Stornierung oder Änderungen der Reise">Anulimi ose ndryshimet e udhëtimit</li>
+                    <li data-en="Coverage for tourist and sporting activities" data-al="Mbulim për aktivitetet turistike dhe sportive" data-de="Schutz für touristische und sportliche Aktivitäten">Mbulim për aktivitetet turistike dhe sportive</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="contact-button" data-en="Contact Immediately" data-al="Kontaktoni Menjëherë" data-de="Sofort kontaktieren">Kontaktoni Menjëherë</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flight Tickets Modal -->
+    <div class="modal-overlay" id="flights-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="flights-modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2 data-en="Flight Tickets Services" data-al="Shërbimet e Biletave të Aviacionit" data-de="Flugticket-Services">Shërbimet e Biletave të Aviacionit</h2>
+            </div>
+            <div class="modal-body">
+                <ul class="coverage-list">
+                    <li data-en="Book domestic flights with flexible schedules" data-al="Rezervoni fluturime vendore me orare fleksibile" data-de="Buchen Sie Inlandsflüge mit flexiblen Zeitplänen">Rezervoni fluturime vendore me orare fleksibile</li>
+                    <li data-en="Book international flights at competitive prices" data-al="Rezervoni fluturime ndërkombëtare me çmime konkurruese" data-de="Buchen Sie internationale Flüge zu wettbewerbsfähigen Preisen">Rezervoni fluturime ndërkombëtare me çmime konkurruese</li>
+                    <li data-en="Choose refundable or non-refundable tickets" data-al="Zgjidhni bileta të rimbursueshme ose jo të rimbursueshme" data-de="Wählen Sie erstattbare oder nicht erstattbare Tickets">Zgjidhni bileta të rimbursueshme ose jo të rimbursueshme</li>
+                    <li data-en="Assistance with baggage, seat selection, and special requests" data-al="Asistencë me bagazhin, zgjedhjen e vendit dhe kërkesat speciale" data-de="Hilfe bei Gepäck, Sitzplatzauswahl und besonderen Anfragen">Asistencë me bagazhin, zgjedhjen e vendit dhe kërkesat speciale</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="contact-button" data-en="Contact Us Now" data-al="Kontaktoni Tani" data-de="Jetzt kontaktieren">Kontaktoni Tani</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Boat Tickets Modal -->
+    <div class="modal-overlay" id="boat-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="boat-modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2 data-en="Boat Tickets Services" data-al="Shërbimet e Biletave të Anijes" data-de="Schiffticket-Services">Shërbimet e Biletave të Anijes</h2>
+            </div>
+            <div class="modal-body">
+                <ul class="coverage-list">
+                    <li data-en="⛴️ Travel by sea with reliable boat services across the Adriatic" data-al="⛴️ Udhëtoni permes detit me shërbime të besueshme të anijes përmes Adriatikut" data-de="⛴️ Reisen Sie zu Wasser mit zuverlässigen Bootsdiensten über die Adria">⛴️ Udhëtoni permes detit me shërbime të besueshme të anijes përmes Adriatikut</li>
+                    <li data-en="🚢 Book domestic and international ferry routes" data-al="🚢 Rezervoni udhtime vendore dhe ndërkombëtare me tragjete" data-de="🚢 Buchen Sie Inlands- und internationale Fährrouten">🚢 Rezervoni udhtime vendore dhe ndërkombëtare me tragjete</li>
+                    <li data-en="🚗 Option to bring your vehicle on board" data-al="🚗 Opsioni për të sjellë automjetin tuaj në bord" data-de="🚗 Option, Ihr Fahrzeug an Bord zu bringen">🚗 Opsioni për të sjellë automjetin tuaj në bord</li>
+                    <li data-en="Connected with ferry companies: Adria Ferries, Ventouris Ferries, and GNV" data-al="Të lidhur me kompanitë e trageteve: Adria Ferries, Ventouris Ferries dhe GNV" data-de="Verbunden mit Fährunternehmen: Adria Ferries, Ventouris Ferries und GNV">Të lidhur me kompanitë e trageteve: Adria Ferries, Ventouris Ferries dhe GNV</li>
+                    <li data-en="⚓ Adriatic Port Connections: 🚢 Durrës ⇄ Bari, 🚢 Durrës ⇄ Ancona, 🚢 Vlorë ⇄ Brindisi" data-al="⚓ Lidhjet e Porteve të Adriatikut: 🚢 Durrës ⇄ Bari, 🚢 Durrës ⇄ Ancona, 🚢 Vlorë ⇄ Brindisi" data-de="⚓ Adriatische Hafenverbindungen: 🚢 Durres ⇄ Bari, 🚢 Durres ⇄ Ancona, 🚢 Vlore ⇄ Brindisi">⚓ Lidhjet e Porteve të Adriatikut: 🚢 Durrës ⇄ Bari, 🚢 Durrës ⇄ Ancona, 🚢 Vlorë ⇄ Brindisi</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="contact-button" data-en="Contact Us Now" data-al="Kontaktoni Tani" data-de="Jetzt kontaktieren">Kontaktoni Tani</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bus Tickets Modal -->
+    <div class="modal-overlay" id="bus-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="bus-modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2 data-en="Bus Tickets Services" data-al="Shërbimet e Biletave të Autobusit" data-de="Busticket-Services">Shërbimet e Biletave të Autobusit</h2>
+            </div>
+            <div class="modal-body">
+                <ul class="coverage-list">
+                    <li data-en="Travel by bus comfortably and safely" data-al="Udhëtoni me autobus në mënyrë të rehatshme dhe të sigurt" data-de="Reisen Sie bequem und sicher mit dem Bus">Udhëtoni me autobus në mënyrë të rehatshme dhe të sigurt</li>
+                    <li data-en="Book domestic and international trips easily" data-al="Rezervoni udhëtime vendore dhe ndërkombëtare lehtësisht" data-de="Buchen Sie Inlands- und internationale Reisen einfach">Rezervoni udhëtime vendore dhe ndërkombëtare lehtësisht</li>
+                    <li data-en="Modern buses with internet, air conditioning and planned stops along the way" data-al="Autobusë modernë me internet, klimë dhe ndalesa të planifikuara gjatë rrugës" data-de="Moderne Busse mit Internet, Klimaanlage und geplanten Zwischenstopps">Autobusë modernë me internet, klimë dhe ndalesa të planifikuara gjatë rrugës</li>
+                    <li data-en="Advance seat reservation and luggage options" data-al="Rezervim të ulseve paraprakisht dhe opsione për bagazhin" data-de="Vorausbuchung von Sitzplätzen und Gepäckoptionen">Rezervim të ulseve paraprakisht dhe opsione për bagazhin</li>
+                    <li data-en="Flexible schedule and different ticket types" data-al="Orar fleksibël dhe lloje të ndryshme biletash" data-de="Flexibler Zeitplan und verschiedene Ticketarten">Orar fleksibël dhe lloje të ndryshme biletash</li>
+                    <li data-en="Available trips throughout Europe" data-al="Udhëtime të disponueshme në të gjithë Evropën" data-de="Verfügbare Reisen in ganz Europa">Udhëtime të disponueshme në të gjithë Evropën</li>
+                    <li data-en="We coordinate and organize group trips from Kosovo to the most attractive cities in Europe (EURO Trip with groups)" data-al="Ne koordinojmë dhe organizojmë udhëtime grupi nga Kosova në qytetet më tërheqëse të Evropës (EURO Trip me grupe)" data-de="Wir koordinieren und organisieren Gruppenreisen von Kosovo zu den attraktivsten Städten Europas (EURO Trip mit Gruppen)">Ne koordinojmë dhe organizojmë udhëtime grupi nga Kosova në qytetet më tërheqëse të Evropës (EURO Trip me grupe)</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="contact-button" data-en="Contact Us Now" data-al="Kontaktoni Tani" data-de="Jetzt kontaktieren">Kontaktoni Tani</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Panel -->
+    <div class="chat-panel" id="chat-panel">
+        <div class="chat-header">
+            <h4 data-en="Chat with Ferifly" data-al="Bisedoni me Ferifly" data-de="Chatten Sie mit Ferifly">Bisedoni me Ferifly</h4>
+            <button class="chat-close" id="chat-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message agent-message">
+                <p data-en="Hello! How can I help you plan your next trip?" data-al="Përshëndetje! Si mund t'ju ndihmoj të planifikoni udhëtimin tuaj të ardhshëm?" data-de="Hallo! Wie kann ich Ihnen bei der Planung Ihrer nächsten Reise helfen?">Përshëndetje! Si mund t'ju ndihmoj të planifikoni udhëtimin tuaj të ardhshëm?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" data-en="Type your message..." data-al="Shkruani mesazhin tuaj..." data-de="Geben Sie Ihre Nachricht ein..." placeholder="Shkruani mesazhin tuaj...">
+            <button id="chat-send">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
