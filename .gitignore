@@ -39,4 +39,7 @@ npm-letsencrypt/
 *.backup
 *.bak
 *.tar.gz
+project_definition.md
+branding.md
+
 
